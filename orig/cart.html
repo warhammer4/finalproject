@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>FinalProject</title>
+</head>
+<body>
+    <main class="main" id="main">
+        <section class="container main-page">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Select your item below</h2>
+                </div>
+            </div>
+        </section>
+        <section class="section checkout-page d-none">
+            <div class="bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="bar-text">Home &gt; Checkout</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section checkout-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="checkout-header">checkout</h2>
+                            <p class="checkout-text">please make your selections and pay</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="checkput-item-count">
+                                <span id="checkoutItemCount"></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <table class="table" id="table">
+                                <tr class="table-headers">
+                                    <td>product name</td>
+                                    <td>unit price</td>
+                                    <td>quantity</td>
+                                    <td>subtotal</td>
+                                </tr>
+                                <tbody id="tbody"></tbody>
+                                <tr class="totals" id="totals">
+                                    <td colspan="4">
+                                        <p class="total-subtotal" id="totalSubtotal">totalSubtotal</p>
+                                        <p class="total-shipping" id="totalShipping">totalShipping</p>
+                                        <p class="total-tax" id="totalTax">totalTax</p>
+                                        <p class="total-total" id="totalTotal">totalTotal</p>
+                                    </td>
+                                    <td class="total-values" id="totalValues">
+                                        <p class="subtotal-value" id="subtotalValue">subtotalValue</p>
+                                        <p class="shipping-value" id="shippingValue">shippingValue</p>
+                                        <p class="tax-value" id="taxValue">taxValue</p>
+                                        <p class="total-value" id="totalValue">$<span></span> </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="btn btn-secondary confirm-button">confirm order</p>
+                            <p class="clear btn btn-secondary" id="clear">clear order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
